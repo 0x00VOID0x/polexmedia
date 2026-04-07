@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Polexmedia | Symbiotic Leader – Media Relations?</title>
+    <link rel='shortcut icon' href='images/icons/favicon.ico' type='image/x-icon'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+
+    <script src="addons/lytebox/lytebox.js"></script>
+    <link href="addons/lytebox/lytebox.css" rel="stylesheet" type="text/css">
+
+    <script src="addons/genValidator/gen_validatorv31.js" type="text/javascript"></script>
+
+    <style>
+        #project.btn { border-bottom: 2px solid orange; }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $('body').fadeIn(300);
+            $(".btn").click(function(){
+                $('body').fadeOut(200);
+            });
+        });
+    </script>
+</head>
+<body>
+    <section class="page-header">
+        <div class="banner">
+            <div class="hamburger">
+                <script>
+                    var menuOn;
+                    $(".hamburger").click(function() {
+                        $(".nav-bar").toggle(200).promise().done(function() {
+                            menuOn = true
+                        });
+                    });
+
+                    $(document).mouseup(function(e) {
+                        var container = $(".nav-bar");
+                        var container2 = $(".hamburger");
+                        if (!container.is(e.target) && !container2.is(e.target) && container.has(e.target).length === 0 && menuOn == true) {
+                            container.hide(200).promise().done(function() {
+                                menuOn == false;
+                            });
+                        }
+                    });
+                </script>
+            </div>
+            <h1 class="project-name"></h1>
+            <h2 class="project-tagline">Symbiotic leader – media relations?<br><div class="header-container">Exploring interaction between prime ministers and the media in Finland, Lithuania, Poland and Sweden</div></h2>
+        </div>
+        <section class="nav-bar">
+            <a href="index.html" id="home" class="btn">Home</a>
+            <a href="project.html" id="project" class="btn">Project</a>
+            <a href="participants.html" id="participants" class="btn">Participants</a>
+            <a href="publications.html" id="publications" class="btn">Publications</a>
+            <a href="events.html" id="events" class="btn">Events</a>
+            <a href="contact.html" id="contact" class="btn">Contact</a>
+        </section>
+    </section>
+
+    <section class="main-content">
+        <h3>Project</h3>
+        <div>
+            <p><span lang="EN-GB">This research project revisits the classic relationship between politics and the media.&nbsp;</span>The purpose of the project is to explore leader–media relations, more specifically interactions between prime ministers (and their communication aides) and journalists, between journalists and political sources, in the four selected countries—Finland, Lithuania, Poland, and Sweden—and in a comparative perspective. It starts from the assumption that these relations are mutually reinforcing and "symbiotic" rather than more fundamentally adversarial, that political executives and media are closely linked and explores in what ways. It is guided by the overarching question of how and with what consequences political executives and media interact. This key question has both empirical and normative orientations and these are related. It involves an ambition to both explore the relationships and to address actual and potential consequences for political power and for democracy as we know it.</p>
+            <p><span lang="EN-GB">The project addresses two scholarly and related themes: (1) journalism in different media systems and the relationship between journalists and sources; and (2) empowerment of prime ministers in parliamentary democracies. The project goes beyond existing research in two central respects. First, it integrates the two themes above. Second, the project includes and assesses the full spectrum of government–media relations—personal as well as impersonal relations.&nbsp;</span><span lang="EN-GB">Theoretically, analyses are based on a combination of theories: the exchange model, the mediatization of politics, executive power, and theories from comparative media research. Methodologically, w</span>e rely on complementary forms of primary material in our case studies. Interviews is our main research technique. The project adopts a comparative research design, with empirical research in a cross-national context. There is variation in our set of selected countries both regarding media system and political system. All the participating researchers work with the same research problem in a concerted effort to exploit the synergies between the academic disciplines of journalism, media and communication studies, and political science. The project is inter-disciplinary by linking these academic disciplines, on the basis of our shared concern with political communication.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span class="site-footer-owner">Copyright &copy <script>document.write(new Date().getFullYear())</script>. Political Executive - Media Relations.</span>
+        <span class="site-footer-credits">Designed by Maxim J.</span>
+    </footer>
+</body>
+</html>

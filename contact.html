@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Polexmedia | Symbiotic Leader – Media Relations?</title>
+    <link rel='shortcut icon' href='images/icons/favicon.ico' type='image/x-icon'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+
+    <script src="addons/lytebox/lytebox.js"></script>
+    <link href="addons/lytebox/lytebox.css" rel="stylesheet" type="text/css">
+
+    <script src="addons/genValidator/gen_validatorv31.js" type="text/javascript"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <style>
+        #contact.btn { border-bottom: 2px solid orange; }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $('body').fadeIn(300);
+            $(".btn").click(function(){
+                $('body').fadeOut(200);
+            });
+        });
+    </script>
+</head>
+<body>
+    <section class="page-header">
+        <div class="banner">
+            <div class="hamburger"></div>
+            <h1 class="project-name"></h1>
+            <h2 class="project-tagline">Symbiotic leader – media relations?<br><div class="header-container">Exploring interaction between prime ministers and the media in Finland, Lithuania, Poland and Sweden</div></h2>
+        </div>
+        <section class="nav-bar">
+            <a href="index.html" id="home" class="btn">Home</a>
+            <a href="project.html" id="project" class="btn">Project</a>
+            <a href="participants.html" id="participants" class="btn">Participants</a>
+            <a href="publications.html" id="publications" class="btn">Publications</a>
+            <a href="events.html" id="events" class="btn">Events</a>
+            <a href="contact.html" id="contact" class="btn">Contact</a>
+        </section>
+    </section>
+
+    <section class="main-content">
+        <h3>Contact</h3>
+        <div>
+            <p><strong>Lead Coordinator</strong><br />Karl Magnus Johansson, Professor<br /><strong>Email:</strong><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#107;&#097;&#114;&#108;&#046;&#109;&#097;&#103;&#110;&#117;&#115;&#046;&#106;&#111;&#104;&#097;&#110;&#115;&#115;&#111;&#110;&#064;&#115;&#104;&#046;&#115;&#101;" target="_top"> send</a><br /><strong>Phone:</strong> +46-73-3972866</p>
+            <hr>
+            <p><strong>Or use the following contact form</strong></p>
+
+            <form action="mailer.php" method="post">
+                <i>All fields must be filled in or else your message won't be sent</i>
+                <br><br>
+
+                <input name="name" type="text" id="name" placeholder="Your name" />
+                <br><br>
+
+                <input name="from" type="text" id="from" placeholder="Your e-mail" />
+                <br><br>
+
+                <input name="subject" type="text" id="subject" placeholder="Subject" />
+                <br><br>
+
+                <textarea name="message" cols="6" rows="5" id="message" placeholder="A message to send..." style="width:100%;height: 300px;"></textarea>
+                <br><br>
+
+                Anti-Spam, tick the checkbox to verify:<br>
+                <div class="g-recaptcha" data-sitekey="6LdVDjMUAAAAAG7_4vBziYZbtG1pEmlPx8IMzsWi"></div>
+                <br>
+
+                <input name="Submit" type="submit" value="Send Message"/>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span class="site-footer-owner">Copyright &copy <script>document.write(new Date().getFullYear())</script>. Political Executive - Media Relations.</span>
+        <span class="site-footer-credits">Designed by Maxim J.</span>
+    </footer>
+</body>
+</html>
