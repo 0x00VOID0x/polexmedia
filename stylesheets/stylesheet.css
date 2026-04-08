@@ -1,12 +1,13 @@
 *{box-sizing:border-box}
-body{padding:0;margin:0;font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#000;display:none;background-image:url(../images/metal.jpg)}
+html{height:100%;}
+body{padding:0;margin:0;font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#000;display:flex;flex-direction:column;min-height:100vh;background-image:url(../images/metal.jpg)}
 a{color:#1e6bb8;text-decoration:none}
 a:hover{text-decoration:underline}
 .btn{display:inline-block;color:#fff;background-color:rgba(0,0,0,0.2);border-color:rgba(255,255,255,0.2);border-style:solid;border-width:1px;border-radius:0;transition:color 0.2s,background-color 0.2s,border-color 0.2s,box-shadow .2s;font-weight:700}
 .btn + .btn{margin-left:1rem}
 .btn:hover{color: dodgerblue;text-decoration:none;background-color:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.3)}
 .btn:focus{box-shadow:0 0 6px #fff}
-.page-header{color:#fff;text-align:center;background-color:#4c4c4c;background-image:url(../images/header.jpg);background-repeat:no-repeat;background-size:100% auto;-webkit-user-select:none;-moz-user-select:none;user-select:none;border-bottom:solid 1px #000;box-shadow:0 0 3px #000}
+.page-header{color:#fff;text-align:center;background-color:#4c4c4c;background-image:url(../images/header.jpg);background-repeat:no-repeat;background-size:100% auto;-webkit-user-select:none;-moz-user-select:none;user-select:none;border-bottom:solid 1px #000;box-shadow:0 0 3px #000;flex-shrink:0}
 .header-container{font-size:20px;font-weight:400}
 .project-name{margin-top:0;margin-bottom:.1rem;margin-left:1rem;text-align:left;font-family:avenida-w01,avenida-w02,fantasy;vertical-align:text-bottom;text-shadow:2px 2px 1px #000;background-image:url(../images/logotype.png);background-repeat:no-repeat;background-size:300px;height:70px;background-position-y:10px}
 .project-name,h1{text-indent:-9999px}
@@ -16,8 +17,10 @@ a:hover{text-decoration:underline}
 .short-info{font-size:x-small;color:#000;border:solid orange;background:#fff;width:300px;position:relative;left:250px;bottom:100px;display:none}
 .nav-bar{background-color:rgba(0,0,0,0.7);max-width:1200px;margin:auto;padding-top:8px;padding-bottom:8px}
 .banner{margin:auto;background-image:url(../images/banner.jpg);height:100%;max-width:1200px;background-size:100% auto;background-repeat:no-repeat}
+.main-content{flex:1;display:flex;flex-direction:column}
 .main-content:first-child{margin-top:0}
 .main-content img{max-width:100%}
+.main-content > div{flex:1;display:flex;flex-direction:column}
 .main-content h1,.main-content h2,.main-content h3,.main-content h4,.main-content h5,.main-content h6{font-weight:400;color:#FFF;background-color:#000;text-shadow:2px 2px 2px #a0a0a0;box-shadow:3px 3px 2px #555;padding:10px;margin-bottom:5px;margin-top:10px;}
 .main-content p{margin-bottom:1em}
 .main-content code{padding:2px 4px;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:.9rem;color:#383e41;background-color:#f3f6fa;border-radius:.3rem}
@@ -39,7 +42,7 @@ a:hover{text-decoration:underline}
 .main-content dl dd{padding:0;margin-bottom:1rem}
 .main-content hr{height:2px;padding:0;margin:1rem 0;background-color:#eff0f1;border:0}
 .main-content div{padding:30px;background:#fff;box-shadow:3px 3px 2px #9c9c9c;margin:0 2px}
-.site-footer{text-align:center;padding-top:1rem;padding-bottom:1rem;margin-top:2rem;border-top:solid 1px #000;border-bottom:solid 1px #000;background:rgba(0,0,0,0.6);box-shadow:0 0 2px #000}
+.site-footer{text-align:center;padding-top:1rem;padding-bottom:1rem;margin-top:10px;border-top:solid 1px #000;border-bottom:solid 1px #000;background:rgba(0,0,0,0.6);box-shadow:0 0 2px #000;flex-shrink:0}
 .site-footer-owner{display:block;font-weight:700;color:#FFF;text-shadow:2px 2px 2px #000}
 .site-footer-credits{color:#819198;font-size:x-small;text-shadow:0 0 3px #000}
 .eventstable{border:1px solid;vertical-align:top;box-shadow:3px 3px 2px #555;background:#fff}
@@ -85,7 +88,7 @@ a:hover{text-decoration:underline}
 th,td{float:left;width:100%}
 }
 @media screen and (min-width: 64em) {
-.main-content{max-width:1200px;margin:0 auto;font-size:1.1rem}
+.main-content{width:1200px;margin:0 auto;font-size:1.1rem}
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
 .main-content{max-width:1090px;padding:0;font-size:1.1rem}
